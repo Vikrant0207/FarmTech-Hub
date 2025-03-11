@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Shopping Cart</h1>
+        
+        <div class="cart-container">
+            <div class="cart-header">
+                <div class="column product-column">Product</div>
+                <div class="column price-column">Price</div>
+                <div class="column quantity-column">Quantity</div>
+                <div class="column total-column">Total</div>
+                <div class="column action-column"></div>
+            </div>
+            
+            <div class="cart-items">
+                <!-- Cart Item 1 -->
+                <div class="cart-item">
+                    <div class="product-column">
+                        <div class="product-image">
+                            <img src="/FarmTech-Hub/Images/drone irrigation.jpg" alt="Product">
+                        </div>
+                        <div class="product-details">
+                            <h3>Agricultural Drone</h3>
+                            <p>Black | Wireless</p>
+                        </div>
+                    </div>
+                    <div class="price-column">₹3,200</div>
+                    <div class="quantity-column">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="total-column">₹3,200</div>
+                    <div class="action-column">
+                        <button class="remove-btn"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+                
+                <!-- Cart Item 2 -->
+                <div class="cart-item">
+                    <div class="product-column">
+                        <div class="product-image">
+                            <img src="/FarmTech-Hub/Images/Cattle feed.jpg" alt="Product">
+                        </div>
+                        <div class="product-details">
+                            <h3>Cattle feed</h3>
+                            <p>Organic | 50lb</p>
+                        </div>
+                    </div>
+                    <div class="price-column">₹85</div>
+                    <div class="quantity-column">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                            <input type="number" value="2" min="1" class="quantity-input">
+                            <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="total-column">₹170</div>
+                    <div class="action-column">
+                        <button class="remove-btn"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+                
+                <!-- Cart Item 3 -->
+                <div class="cart-item">
+                    <div class="product-column">
+                        <div class="product-image">
+                            <img src="/FarmTech-Hub/Images/Tractor.jpg" alt="Product">
+                        </div>
+                        <div class="product-details">
+                            <h3>Tractor</h3>
+                            <p>blue | 25HP</p>
+                        </div>
+                    </div>
+                    <div class="price-column">₹12,500</div>
+                    <div class="quantity-column">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="total-column">₹12,500</div>
+                    <div class="action-column">
+                        <button class="remove-btn"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cart-footer">
+                <div class="coupon-section">
+                    <input type="text" placeholder="Promo Code" class="coupon-input">
+                    <button class="apply-coupon">Apply</button>
+                </div>
+                
+                <div class="cart-summary">
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span>₹15,870</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span>₹50</span>
+                    </div>
+                    <div class="summary-row discount">
+                        <span>Discount</span>
+                        <span>-₹250</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span>₹15,670</span>
+                    </div>
+                    
+                    <button class="checkout-btn">Proceed to Checkout</button>
+                    <button class="continue-shopping">Continue Shopping</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

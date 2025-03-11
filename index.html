@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmTech Hub - Learning Production & Breeding for Higher Profits</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">FarmTech Hub</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#education" class="active">Learning Platform</a></li>
+                    <li><a href="/FarmTech-Hub/MarketPlace/marketplace.html">Marketplace</a></li>
+                    <li><a href="#veterinary">Veterinary Training</a></li>
+                    <li><a href="#assistant">AI Assistant</a></li>
+                    <li><a href="#login" class="btn-login">Login</a></li>
+                    <li><a href="#register" class="btn-register">Register</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="mobile-toggle">
+                <button id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Transform Your Farm with AI-Powered Technology</h1>
+                    <p>Learn advanced production techniques, access marketplace services, and get veterinary training -
+                        all in one platform</p>
+                    <div class="hero-buttons">
+                        <a href="#education" class="btn btn-primary">Explore Learning Platform</a>
+                        <a href="#assistant" class="btn btn-secondary">Try AI Assistant</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="/FarmTech-Hub/Images/Modern Farming technologies.jpg" alt="Modern Farming Technology">
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Platform Section -->
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Educational Platform for Farmers</h2>
+                    <p>Access cutting-edge knowledge and techniques to maximize your farm's productivity</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Production Techniques</h3>
+                        <p>Use AI-powered predictive analytics to forecast weather patterns and optimize planting and
+                            harvesting windows.</p>
+                        <button class="btn btn-outline" data-module="production-techniques">Learn More</button>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-horse"></i>
+                        </div>
+                        <h3>Livestock Production</h3>
+                        <p>Implement automated feeding systems optimized by AI to improve productivity and reduce waste.
+                        </p>
+                        <button class="btn btn-outline" data-module="livestock-production">Learn More</button>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-dna"></i>
+                        </div>
+                        <h3>Breeding Techniques</h3>
+                        <p>Leverage AI models to analyze genetic data for optimal breeding pairs and healthier
+                            offspring.</p>
+                        <button class="btn btn-outline" data-module="breeding-techniques">Learn More</button>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Genetic Improvement</h3>
+                        <p>Use data-driven selection to identify animals with desirable genetic traits for improved farm
+                            output.</p>
+                        <button class="btn btn-outline" data-module="genetic-improvement">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="interactive-modules">
+                    <h3>Interactive Learning Modules</h3>
+                    <div class="modules-list">
+                        <div class="module-item" id="module-farming">
+                            <img src="Images/Farming.jpg" alt="Farming Module">
+                            <h4>Sustainable Farming</h4>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 75%"></div>
+                                <span>75% Complete</span>
+                            </div>
+                            <button class="btn btn-primary">Continue Learning</button>
+                        </div>
+                        <div class="module-item" id="module-livestock">
+                            <img src="Images/Advanced livestock.jpg" alt="Livestock Module">
+                            <h4>Advanced Livestock Care</h4>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 45%"></div>
+                                <span>45% Complete</span>
+                            </div>
+                            <button class="btn btn-primary">Continue Learning</button>
+                        </div>
+                        <div class="module-item" id="module-agriculture">
+                            <img src="Images/Agriculture.jpg" alt="Agriculture Module">
+                            <h4>Precision Agriculture</h4>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 10%"></div>
+                                <span>10% Complete</span>
+                            </div>
+                            <button class="btn btn-primary">Start Learning</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marketplace Section with Added Cart -->
+        <section id="marketplace" class="section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Buy and Sell Marketplace</h2>
+                    <p>Connect with buyers and sellers in our AI-powered agricultural marketplace</p>
+                </div>
+
+                <div class="marketplace-tabs">
+                    <div class="tab-controls">
+                        <button class="tab-btn active" data-tab="buy">Buy Equipment & Supplies</button>
+                        <button class="tab-btn" data-tab="sell">Sell Products</button>
+                        <!-- Added Cart Tab Button -->
+                        <button class="tab-btn" data-tab="cart">
+                            <i class="fas fa-shopping-cart"></i> Cart <span class="cart-count">0</span>
+                        </button>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="buy-tab">
+                            <div class="marketplace-features">
+                                <div class="marketplace-feature">
+                                    <i class="fas fa-tags"></i>
+                                    <h3>Dynamic Pricing Algorithm</h3>
+                                    <p>Our AI models adjust prices based on market demand, availability, and seasonal
+                                        trends, ensuring fair pricing for all.</p>
+                                </div>
+                                <div class="marketplace-feature">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <h3>Recommendation Engine</h3>
+                                    <p>Get personalized equipment recommendations based on your preferences, farming
+                                        scale, and regional needs.</p>
+                                </div>
+                            </div>
+
+                            <div class="product-grid">
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="Images/Tractor.jpg" alt="Tractor">
+                                    </div>
+                                    <div class="product-details">
+                                        <h4>Compact Tractor</h4>
+                                        <div class="product-meta">
+                                            <span class="product-price">₹12,500</span>
+                                            <span class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <span>(32)</span>
+                                            </span>
+                                        </div>
+                                        <p>Perfect for small to medium farms with versatile attachment options.</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="Images/Irrigation system.jpg" alt="Irrigation System">
+                                    </div>
+                                    <div class="product-details">
+                                        <h4>Smart Irrigation System</h4>
+                                        <div class="product-meta">
+                                            <span class="product-price">₹2,750</span>
+                                            <span class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <span>(47)</span>
+                                            </span>
+                                        </div>
+                                        <p>AI-controlled irrigation with soil moisture sensors for optimal water usage.
+                                        </p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="Images/Cattle feed.jpg" alt="Livestock Feed">
+                                    </div>
+                                    <div class="product-details">
+                                        <h4>Premium Livestock Feed</h4>
+                                        <div class="product-meta">
+                                            <span class="product-price">₹85 per 50lb</span>
+                                            <span class="product-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <span>(19)</span>
+                                            </span>
+                                        </div>
+                                        <p>Nutritionally balanced feed for optimal livestock growth and health.</p>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="sell-tab">
+                            <div class="marketplace-features">
+                                <div class="marketplace-feature">
+                                    <i class="fas fa-bullhorn"></i>
+                                    <h3>AI-Powered Listing Optimization</h3>
+                                    <p>Our system automatically generates optimized product descriptions and tags to
+                                        improve discoverability.</p>
+                                </div>
+                                <div class="marketplace-feature">
+                                    <i class="fas fa-boxes"></i>
+                                    <h3>Inventory Management System</h3>
+                                    <p>Track available stock in real-time and receive notifications when supplies are
+                                        running low.</p>
+                                </div>
+                            </div>
+
+                            <div class="sell-form">
+                                <h3>List Your Product</h3>
+                                <form id="product-listing-form">
+                                    <div class="form-group">
+                                        <label for="product-name">Product Name</label>
+                                        <input type="text" id="product-name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="product-category">Category</label>
+                                        <select id="product-category" required>
+                                            <option value="">Select a category</option>
+                                            <option value="equipment">Farm Equipment</option>
+                                            <option value="supplies">Agricultural Supplies</option>
+                                            <option value="livestock">Livestock</option>
+                                            <option value="crops">Crops & Produce</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="product-description">Description</label>
+                                        <textarea id="product-description" rows="4" required></textarea>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group half">
+                                            <label for="product-price">Price (₹)</label>
+                                            <input type="number" id="product-price" min="0" step="0.01" required>
+                                        </div>
+                                        <div class="form-group half">
+                                            <label for="product-quantity">Quantity Available</label>
+                                            <input type="number" id="product-quantity" min="1" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="product-image">Product Images</label>
+                                        <input type="file" id="product-image" accept="image/*" multiple>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Create Listing</button>
+                                </form>
+                            </div>
+                        </div>
+                        
+                        <!-- Added Cart Tab Content -->
+                     
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Veterinary Training Section -->
+        <section id="veterinary" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Veterinary Training Program</h2>
+                    <p>Enhance your skills with our AI-powered veterinary training modules</p>
+                </div>
+
+                <div class="vet-program-grid">
+                    <div class="vet-program-card">
+                        <div class="program-icon">
+                            <i class="fas fa-viruses"></i>
+                        </div>
+                        <h3>Disease Control</h3>
+                        <ul>
+                            <li>
+                                <strong>Early Disease Detection:</strong>
+                                <p>AI-powered image recognition analyzes photos of livestock symptoms for early
+                                    detection of common diseases.</p>
+                            </li>
+                            <li>
+                                <strong>Predictive Outbreak Models:</strong>
+                                <p>Machine learning algorithms predict disease outbreaks based on historical patterns
+                                    and climate data.</p>
+                            </li>
+                        </ul>
+                        <div class="program-action">
+                            <button class="btn btn-outline" data-program="disease-control">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <div class="vet-program-card">
+                        <div class="program-icon">
+                            <i class="fas fa-paw"></i>
+                        </div>
+                        <h3>Pet Care</h3>
+                        <ul>
+                            <li>
+                                <strong>AI-Driven Nutrition Plans:</strong>
+                                <p>Personalized feeding and care recommendations based on the animal's age, breed, and
+                                    health status.</p>
+                            </li>
+                        </ul>
+                        <div class="program-action">
+                            <button class="btn btn-outline" data-program="pet-care">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <div class="vet-program-card">
+                        <div class="program-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Certification</h3>
+                        <ul>
+                            <li>
+                                <strong>AI-Proctored Exams:</strong>
+                                <p>Online certification with AI-powered proctoring to ensure the integrity of
+                                    assessments.</p>
+                            </li>
+                        </ul>
+                        <div class="program-action">
+                            <button class="btn btn-outline" data-program="certification">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="disease-detection-demo">
+                    <h3>Try Our Disease Detection Tool</h3>
+                    <div class="detection-tool">
+                        <div class="upload-area" id="disease-upload-area">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Drag & drop an image or click to upload</p>
+                            <input type="file" id="disease-image-upload" accept="image/*" hidden>
+                        </div>
+                        <div class="detection-result" id="disease-result">
+                            <h4>Analysis Results</h4>
+                            <div class="result-placeholder">
+                                <p>Upload an image to see AI analysis results</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Assistant Section -->
+        <section id="assistant" class="section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>AI Assistant</h2>
+                    <p>Get instant support and guidance from our intelligent farming assistant</p>
+                </div>
+
+                <div class="assistant-features">
+                    <div class="assistant-card">
+                        <div class="assistant-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Voice & Text Support</h3>
+                        <ul>
+                            <li>
+                                <strong>Conversational AI:</strong>
+                                <p>Enables natural language interaction via voice and text, supporting regional
+                                    languages for accessibility.</p>
+                            </li>
+                            <li>
+                                <strong>Real-Time Translation:</strong>
+                                <p>Supports multilingual users by providing instant translation for better
+                                    communication.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="assistant-card">
+                        <div class="assistant-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Marketplace Assistance</h3>
+                        <ul>
+                            <li>
+                                <strong>AI-Powered Chatbot:</strong>
+                                <p>Guides users through complex tasks like setting up payment methods, listing items,
+                                    and navigating purchase processes.</p>
+                            </li>
+                            <li>
+                                <strong>Predictive Buying Suggestions:</strong>
+                                <p>Machine learning analyses past purchase behaviour and market trends to recommend
+                                    supplies proactively.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="assistant-demo">
+                    <h3>Try Our AI Assistant</h3>
+                    <div class="chat-container">
+                        <div class="chat-messages" id="chat-messages">
+                            <div class="message assistant">
+                                <div class="message-content">
+                                    <p>Hello! I'm your FarmTech Assistant. How can I help you today?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" id="user-message" placeholder="Type your question here...">
+                            <div class="input-actions">
+                                <button id="voice-input-btn"><i class="fas fa-microphone"></i></button>
+                                <button id="send-message-btn"><i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>FarmTech Hub</h3>
+                    <p>Transforming agriculture with AI-powered solutions for modern farmers.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#education">Learning Platform</a></li>
+                        <li><a href="#marketplace">Marketplace</a></li>
+                        <li><a href="#veterinary">Veterinary Training</a></li>
+                        <li><a href="#assistant">AI Assistant</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Stay updated with the latest farming technologies and tips.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FarmTech Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Login to FarmTech Hub</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                </form>
+                <div class="form-footer">
+                    <p>Don't have an account? <a href="#" id="show-register-modal">Register</a></p>
+                    <p><a href="#">Forgot your password?</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="register-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Create an Account</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="register-form">
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label for="register-fname">First Name</label>
+                            <input type="text" id="register-fname" required>
+                        </div>
+                        <div class="form-group half">
+                            <label for="register-lname">Last Name</label>
+                            <input type="text" id="register-lname" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">Email</label>
+                        <input type="email" id="register-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Password</label>
+                        <input type="password" id="register-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm-password">Confirm Password</label>
+                        <input type="password" id="register-confirm-password" required>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I agree to the <a href="#">Terms and Conditions</a></label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Register</button>
+                </form>
+                <div class="form-footer">
+                    <p>Already have an account? <a href="#" id="show-login-modal">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+<script src="script.js" defer></script>
+
+</html>
